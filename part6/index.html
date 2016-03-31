@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="firstApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Controllers!</title>
+  </head>
+  <body>
+    <div ng-controller="MyFirstController">
+      <h1>Hello {{ name }}</h1>
+      <input ng-model="name" type="text" placeholder="What is your name">
+    </div>
+    <div ng-controller="ExercisesController">
+      <h2>Favorite Color: {{ FavColor }}</h2>
+      <h2>Seconds in a Century: {{ secondsInACentury | number }}</h2>
+      <h2>Current Date: {{ rightNow | date:'fullDate'}}</h2>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+  </body>
+</html>

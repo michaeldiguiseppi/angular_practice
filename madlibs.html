@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="madLibs">
+  <head>
+    <meta charset="utf-8">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container" style="padding: 50px;" ng-controller="libController">
+      <form class="form-horizontal">
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Boy's Name" class="form-control" ng-model="boyName">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Adjective" class="form-control" ng-model="adj">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Plural Noun" class="form-control" ng-model="pNoun1">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Plural Noun" class="form-control" ng-model="pNoun2">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Insect, Plural" class="form-control" ng-model="insect">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Plural Noun" class="form-control" ng-model="pNoun3">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <input type="text" placeholder="Verb ending in 's'" class="form-control" ng-model="verb">
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <button type="reset" class="btn btn-danger">Try Again</button>
+          </div>
+        </div>
+      </form>
+      <br />
+      <div class="row">
+        <div class="col-lg-6">
+          <p class="text-center">
+            I'm in love with {{boyName}}. He's so {{ adj }}! He has big flat {{ pNoun1 }}, and when our {{ pNoun2 }} meet, I get {{ insect }} in my stomach. I've fallen for him like a ton of {{ pNoun3 }}, and he {{ verb }} for me, too. But I think he's got another girlfriend. What should I do?
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
